@@ -3,7 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app/libs/android-junit-report-1.5.8.jar" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/libs/spoon-client-1.1.1.jar" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/androidTest/java/com/marts/near/EspressoSolo.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/androidTest/java/com/marts/near/RecordingWaitIdlingResource.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/androidTest/java/com/marts/near/ServiceValidatorIdlingResource.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/back.xml" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/back.xml" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/back.xml" charset="windows-1252" />

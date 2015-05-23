@@ -3,12 +3,11 @@ package com.marts.near;
 import android.app.Activity;
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
-import android.support.test.espresso.Espresso;
-import android.support.test.espresso.IdlingResource;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.LargeTest;
 
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -35,18 +34,25 @@ public class ApplicationTest{
         }
     }
 
+    @Before
+    public void registerWaitService() {
+        EspressoSolo.setIdlingResourceTimeout(30);
+    }
+
     @Rule
     public final ActivityTestRule<?> activityRule
             = new ActivityTestRule<>(activityClass);
 
 
+
     @Test
     public void testProducts() throws Exception {
+        EspressoSolo.sleep(2000);
         onView(withId(getId("search_now")));
-        IdlingResource idlingResource3 = new RecordingWaitIdlingResource(2000);
+        /*IdlingResource idlingResource3 = new RecordingWaitIdlingResource(2000);
         Espresso.registerIdlingResources(idlingResource3);
         onView(withId(getId("actual_price")));
-        Espresso.unregisterIdlingResources(idlingResource3);
+        Espresso.unregisterIdlingResources(idlingResource3);*/
     }
 
     public static int getId(String id) {
