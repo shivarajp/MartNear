@@ -9,8 +9,6 @@ import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.LargeTest;
 
-import com.squareup.spoon.Spoon;
-
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -44,16 +42,11 @@ public class ApplicationTest{
 
     @Test
     public void testProducts() throws Exception {
-
-        Spoon.screenshot(activityRule.getActivity(), "");
         onView(withId(getId("search_now")));
-
         IdlingResource idlingResource3 = new RecordingWaitIdlingResource(2000);
         Espresso.registerIdlingResources(idlingResource3);
         onView(withId(getId("actual_price")));
         Espresso.unregisterIdlingResources(idlingResource3);
-        Spoon.screenshot(activityRule.getActivity(), "");
-        //Espresso.pressBack();
     }
 
     public static int getId(String id) {
