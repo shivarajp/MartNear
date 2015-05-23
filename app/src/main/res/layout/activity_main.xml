@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.cbse.project.LoginActivity">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Search Now"
+        android:id="@+id/mental_btn"
+        android:background="#FF0000"
+        android:textSize="7.5pt"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="116dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Smarter Shop Search Is Here"
+        android:textColor="#F26539"
+        android:textSize="10pt"
+        android:gravity="center_horizontal"
+        android:id="@+id/loginusername"
+        android:layout_below="@+id/loginlogo"
+        android:layout_alignRight="@+id/mental_btn"
+        android:layout_alignEnd="@+id/mental_btn" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="  Enter what you are looking for "
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/back"
+        android:id="@+id/loginpwd"
+        android:layout_above="@+id/mental_btn"
+        android:layout_alignLeft="@+id/loginusername"
+        android:layout_alignStart="@+id/loginusername"
+        android:layout_marginBottom="40dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/loginlogo"
+        android:src="@drawable/mn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bangalore"
+        android:background="@drawable/back"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="10pt"
+        android:id="@+id/your_location"
+        android:layout_below="@+id/loginusername"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
