@@ -13,12 +13,20 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProductInfo"
+            android:label="@string/title_activity_search_results" >
+        </activity>
+        <activity
+            android:name=".ShopListActivity"
+            android:label="@string/title_activity_shop_list" >
         </activity>
     </application>
 

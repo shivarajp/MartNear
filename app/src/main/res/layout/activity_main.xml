@@ -11,7 +11,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Search Now"
-        android:id="@+id/mental_btn"
+        android:id="@+id/search_now"
         android:background="#FF0000"
         android:textSize="7.5pt"
         android:textColor="#FFFFFF"
@@ -29,8 +29,8 @@
         android:gravity="center_horizontal"
         android:id="@+id/loginusername"
         android:layout_below="@+id/loginlogo"
-        android:layout_alignRight="@+id/mental_btn"
-        android:layout_alignEnd="@+id/mental_btn" />
+        android:layout_alignRight="@+id/search_now"
+        android:layout_alignEnd="@+id/search_now" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -42,7 +42,7 @@
         android:textColorHint="#FFFFFF"
         android:background="@drawable/back"
         android:id="@+id/loginpwd"
-        android:layout_above="@+id/mental_btn"
+        android:layout_above="@+id/search_now"
         android:layout_alignLeft="@+id/loginusername"
         android:layout_alignStart="@+id/loginusername"
         android:layout_marginBottom="40dp" />
